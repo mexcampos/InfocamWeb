@@ -1,42 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Infocam Software Company</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./boxicons-2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
   
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-
-
-    <!-- TOP NAV -->
-    <div class="top-nav" id="home">
+  <body>
+    <!-- NAV -->
+    <!-- TODO: Fix nav bar, make it better -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto">
-                    <p> <i class='bx bxs-envelope'></i> consultas@infocam.com.ar</p>
-                    <p> <i class='bx bxs-phone-call'></i> +54 387 588-2695</p>
-                </div>
-                <div class="col-auto social-icons">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-pinterest'></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- BOTTOM NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Infocam<span class="dot">.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#"><img src="./img/logo_infocam_png-01.png" alt="Infocam Logo" class="logo"></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -47,7 +41,7 @@
                         <a class="nav-link" href="#about">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
+                        <a class="nav-link" href="#service">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Equipo</a>
@@ -60,8 +54,10 @@
         </div>
     </nav>
     <main>
+
     <!-- SLIDER -->
-    <section aria-label="Newest Photos">
+    <!-- TODO: change photos -->
+    <section aria-label="Newest Photos" class="hidden" id="slider">
         <div class="carousel" data-carousel>
           <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
           <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
@@ -80,34 +76,35 @@
     </section>
     
     <!-- ABOUT -->
-    <section id="about">
+    <!-- TODO: check delay for animations -->
+    <section id="about" class="hidden">
         <div class="container">
+            <h1 class="hidden">Infocam Software Company</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-5 py-3">
                     <div class="row">
-
-                        <div class="col-12">
+                        <div class="col-12 mt-4 hidden">
                             <div class="info-box">
                                 <img src="img/icon6.png" alt="">
-                                <div class="ms-4">
+                                <div class="ms-4" class="hidden">
                                     <h5>Software de Gestión</h5>
                                     <p>El software de gestión ayuda a las empresas a administrar y controlar sus procesos de manera eficiente, lo que mejora la productividad y el rendimiento.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-4">
+                        <div class="col-12 mt-4 hidden">
                             <div class="info-box">
                                 <img src="img/icon4.png" alt="">
-                                <div class="ms-4">
+                                <div class="ms-4" class="hidden">
                                     <h5>Administración de Base de Datos</h5>
                                     <p>La administración de bases de datos es el proceso de organizar y mantener datos de manera efectiva y segura para mejorar la toma de decisiones empresariales.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-4">
+                        <div class="col-12 mt-4 hidden">
                             <div class="info-box">
                                 <img src="img/icon5.png" alt="">
-                                <div class="ms-4">
+                                <div class="ms-4" class="hidden">
                                     <h5>Marketing Digital</h5>
                                     <p>El marketing digital es la promoción de productos o servicios utilizando canales digitales, como el correo electrónico, las redes sociales y los motores de búsqueda para llegar a audiencias específicas y medir el éxito en tiempo real.</p>
                                 </div>
@@ -120,7 +117,8 @@
     </section>
 
     <!-- MILESTONE -->
-    <section id="milestone">
+    <!-- TODO: hacer efecto de conteo -->
+    <section id="milestone" class="hidden">
         <div class="container">
             <div class="row text-center justify-content-center gy-4">
                 <div class="col-lg-2 col-sm-6">
@@ -144,39 +142,40 @@
     </section>
 
     <!-- SERVICIOS -->
-    <section id="services" class="text-center">
+    <!-- TODO: agregar mas espacio para descanso visual -->
+    <section id="service" class="hidden">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="intro">
-                        <h1>Nuestros Servicios</h1>
+                        <h1 class="hidden">Nuestros Servicios</h1>
                         <p class="mx-auto">¿Te gustaría aumentar la eficiencia y el rendimiento de tu negocio con soluciones de software personalizadas? ¡Te ayudamos! Contáctanos para más información.</p>
                     </div>
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 hidden">
                     <div class="service">
                         <img src="img/icon1.png" alt="">
                         <h5>Software de Gestión</h5>
                         <p>Nuestro software de gestión personalizado mejora la eficiencia, integra herramientas y proporciona soporte técnico para su negocio.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 hidden">
                     <div class="service">
                         <img src="img/icon2.png" alt="">
                         <h5>Base de Datos</h5>
                         <p>Nuestro servicio de administración de bases de datos personalizado te ayuda a mantener tus datos organizados y protegidos.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 hidden">
                     <div class="service">
                         <img src="img/icon3.png" alt="">
                         <h5>Digital Marketing</h5>
                         <p>¿Quieres llegar a tu público objetivo de manera más efectiva y medir tu éxito? Nuestro servicio de marketing digital personalizado puede ayudarte.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 hidden">
                     <div class="service">
                         <img src="img/icon4.png" alt="">
                         <h5>Consultoría Empresarial</h5>
@@ -188,27 +187,22 @@
     </section>
 
     <!-- EQUIPO -->
-    <section id="team">
+    <!-- TODO: cambiar el color del hover -->
+    <section id="team" class="hidden">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="intro">
                         <h1>Nuestro Equipo</h1>
-                        <p class="mx-auto">Nuestro equipo de asesores está compuesto por expertos en tecnología altamente capacitados y experimentados en consultoría empresarial. Nos esforzamos por entender las necesidades únicas de nuestros clientes y desarrollar soluciones personalizadas para ayudarles a alcanzar sus objetivos empresariales.</p>
+                        <p class="mx-auto">Nuestro equipo de asesores está compuesto por expertos en tecnología altamente capacitados y experimentados en consultoría empresarial</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-4 col-md-8 hidden">
                     <div class="team-member">
                         <div class="image">
                             <img src="./img/avatar1.png" alt="">
-                            <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
                             <div class="overlay"></div>
                         </div>
 
@@ -216,16 +210,10 @@
                         <p>Gerente General</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-4 col-md-8 hidden">
                     <div class="team-member">
                         <div class="image">
                             <img src="./img/avatar2.png" alt="">
-                            <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
                             <div class="overlay"></div>
                         </div>
 
@@ -233,16 +221,10 @@
                         <p>Analista Semi-Senior</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-4 col-md-8 hidden">
                     <div class="team-member">
                         <div class="image">
                             <img src="./img/avatar3.png" alt="">
-                            <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
                             <div class="overlay"></div>
                         </div>
 
@@ -254,6 +236,7 @@
         </div>
     </section>
     </main>
+
     <footer>
         <div class="footer-top text-center">
             <div class="container">
@@ -278,7 +261,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-body p-0">
@@ -286,45 +269,10 @@
                         <div class="row gy-4">
                             <div class="col-lg-4 col-sm-12 bg-cover"
                                 style="background-image: url(img/c2.jpg); min-height:300px;">
-                                <div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <form class="p-lg-5 col-12 row g-3">
-                                    <div>
-                                        <h1>Get in touch</h1>
-                                    <p>Fell free to contact us and we will get back to you as soon as possible</p>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="userName" class="form-label">First name</label>
-                                        <input type="text" class="form-control" placeholder="Jon" id="userName"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="userName" class="form-label">Last name</label>
-                                        <input type="text" class="form-control" placeholder="Doe" id="userName"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="userName" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" placeholder="Johndoe@example.com" id="userName"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
-                                        <textarea name="" placeholder="This is looking great and nice." class="form-control" id=""  rows="4"></textarea>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-brand">Send Message</button>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -333,5 +281,7 @@
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script defer src="./JS/aos.js"></script>
+
   </body>
 </html>
